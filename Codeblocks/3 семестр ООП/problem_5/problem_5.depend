@@ -1,0 +1,16 @@
+# depslib dependency file v1.0
+1385109997 source:/home/risent/Boris.Strelnikov/problem_5/main.cpp
+	"segment_tree.hpp"
+	<algorithm>
+	<functional>
+	<bitset>
+	<string>
+	<unordered_map>
+	<fstream>
+
+1384720317 /home/risent/Boris.Strelnikov/problem_5/segment_tree.hpp
+	<climits>
+	<vector>
+	<stdexcept>
+	<iostream>
+

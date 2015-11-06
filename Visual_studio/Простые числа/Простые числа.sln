@@ -1,0 +1,20 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Простые числа", "Простые числа\Простые числа.vcxproj", "{6B54BE13-4A29-4339-AC52-673C356E0F2B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{6B54BE13-4A29-4339-AC52-673C356E0F2B}.Debug|Win32.ActiveCfg = Debug|Win32
+		{6B54BE13-4A29-4339-AC52-673C356E0F2B}.Debug|Win32.Build.0 = Debug|Win32
+		{6B54BE13-4A29-4339-AC52-673C356E0F2B}.Release|Win32.ActiveCfg = Release|Win32
+		{6B54BE13-4A29-4339-AC52-673C356E0F2B}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

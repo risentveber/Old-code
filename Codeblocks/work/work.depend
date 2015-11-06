@@ -1,0 +1,10 @@
+# depslib dependency file v1.0
+1396984748 source:/home/risent/Codeblocks_projects/work/main.cpp
+	<iostream>
+	<list>
+	<stack>
+	<set>
+	<vector>
+	<deque>
+	<map>
+

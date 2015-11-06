@@ -1,0 +1,15 @@
+﻿Build started 13.05.2013 11:31:26.
+     1>Project "C:\Users\Борис\Documents\Visual Studio 2012\Projects\Red Black Tree\Red Black Tree\Red Black Tree.vcxproj" on node 2 (Rebuild target(s)).
+     1>ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\CL.exe /c /Zi /nologo /W3 /WX- /O2 /Oi /Oy- /GL /D _MBCS /Gm- /EHsc /MD /GS /Gy /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Release\\" /Fd"Release\vc110.pdb" /Gd /TP /analyze- /errorReport:prompt main.cpp
+         main.cpp
+       Link:
+         C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\Борис\Documents\Visual Studio 2012\Projects\Red Black Tree\Release\Red Black Tree.exe" /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:\Users\Борис\Documents\Visual Studio 2012\Projects\Red Black Tree\Release\Red Black Tree.pdb" /OPT:REF /OPT:ICF /LTCG /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\Борис\Documents\Visual Studio 2012\Projects\Red Black Tree\Release\Red Black Tree.lib" /MACHINE:X86 /SAFESEH Release\main.obj
+         Generating code
+         Finished generating code
+         Red Black Tree.vcxproj -> C:\Users\Борис\Documents\Visual Studio 2012\Projects\Red Black Tree\Release\Red Black Tree.exe
+     1>Done Building Project "C:\Users\Борис\Documents\Visual Studio 2012\Projects\Red Black Tree\Red Black Tree\Red Black Tree.vcxproj" (Rebuild target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:01.04

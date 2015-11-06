@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1392578042 source:/home/risent/Codeblocks_projects/problem2/main.cpp
+	<iostream>
+	<string>
+	<map>
+

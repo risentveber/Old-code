@@ -1,0 +1,10 @@
+# depslib dependency file v1.0
+1393169795 source:/home/risent/Codeblocks_projects/OLS/main.cpp
+	<stdio.h>
+	<iostream>
+	<string>
+	<ostream>
+	<fstream>
+	<math.h>
+	<stdio.h>
+

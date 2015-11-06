@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1385899083 source:/home/risent/Boris.Strelnikov/globe/main.cpp
+	<iostream>
+	<string>
+	<vector>
+

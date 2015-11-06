@@ -1,0 +1,39 @@
+#include "suffix_tree.h"
+///все индексы - с нулевого по строчкам
+SuffixTree::SuffixTree(const wstring &str) : text(str)
+{
+    build();
+}
+
+void SuffixTree::build_from(const wstring &str)
+{
+    text = str;
+    build();
+}
+
+void SuffixTree::build()
+{
+    vertexes.clear();
+    vertexes.push_back(Suff_vrtx(0));
+
+    int n = text.length();
+    if (n == 0)
+        return;
+    vertexes.push_back(Suff_vrtx(1, 0));///элемент с инд 1 - лист с нулевым номером родитель - ноль default
+    vertexes.back().set_from(0);
+    vertexes[0].link(text[0], 1);
+
+    int End = 1;
+    int tmp;
+
+    n = n - 1;
+    int Ji = 1; ///номер ноды обозначающей последний созданный лист
+    for (int i = 0; i < n; ++i){///выполнение i + 1 продления
+        End++;
+        tmp = vertexes[Ji].parent;
+
+    }
+
+}
+
+

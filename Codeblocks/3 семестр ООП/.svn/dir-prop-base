@@ -1,0 +1,17 @@
+K 10
+svn:ignore
+V 20
+*.out
+*.o
+*.depend
+
+
+K 10
+svn:igonre
+V 26
+*.out
+*.o
+*/bin/*
+*/obj/*
+
+END

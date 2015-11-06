@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_layout_file>
+	<ActiveTarget name="Debug" />
+	<File name="main.cpp" open="1" top="1" tabpos="3" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="1320" topLine="57" />
+		</Cursor>
+	</File>
+	<File name="segment_tree.hpp" open="1" top="0" tabpos="1" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="3574" topLine="113" />
+		</Cursor>
+		<Folding>
+			<Collapse line="59" />
+			<Collapse line="73" />
+			<Collapse line="85" />
+			<Collapse line="114" />
+			<Collapse line="127" />
+		</Folding>
+	</File>
+	<File name="plan.txt" open="1" top="0" tabpos="2" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="169" topLine="0" />
+		</Cursor>
+	</File>
+</CodeBlocks_layout_file>

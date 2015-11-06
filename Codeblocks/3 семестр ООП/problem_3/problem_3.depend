@@ -1,0 +1,14 @@
+# depslib dependency file v1.0
+1382688862 source:/home/risent/Boris.Strelnikov/problem_3/main.cpp
+	"edge.h"
+
+1382084037 /home/risent/Boris.Strelnikov/problem_3/libs/disjoint_sets.h
+	<iostream>
+	<vector>
+	<unordered_map>
+
+1382688959 /home/risent/Boris.Strelnikov/problem_3/edge.h
+	"disjoint_sets.h"
+	<fstream>
+	<algorithm>
+

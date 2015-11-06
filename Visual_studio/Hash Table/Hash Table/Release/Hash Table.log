@@ -1,0 +1,7 @@
+﻿  main.cpp
+main.cpp(10): error C2664: 'Hash<K,V>::search' : cannot convert parameter 1 from 'int' to 'unsigned long &'
+          with
+          [
+              K=unsigned long,
+              V=unsigned long
+          ]

@@ -1,0 +1,14 @@
+дерево проекта:
+    main.cpp
+    experemental_graph.cpp
+        -experemental_graph.h
+    experemental_result.cpp
+        -experemental_graph.h
+
+текущие шаги
+реализация
+    max_flow()
+
+
+
+
