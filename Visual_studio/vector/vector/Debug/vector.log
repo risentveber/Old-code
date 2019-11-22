@@ -1,6 +1,0 @@
-﻿  main.cpp
-c:\users\борис\documents\visual studio 2012\projects\vector\vector\vector.h(30): warning C4554: '&' : check operator precedence for possible error; use parentheses to clarify precedence
-c:\users\борис\documents\visual studio 2012\projects\vector\vector\vector.h(61): warning C4018: '<' : signed/unsigned mismatch
-c:\users\борис\documents\visual studio 2012\projects\vector\vector\vector.h(131): warning C4800: 'int' : forcing value to bool 'true' or 'false' (performance warning)
-c:\users\борис\documents\visual studio 2012\projects\vector\vector\main.cpp(10): warning C4800: 'size_t' : forcing value to bool 'true' or 'false' (performance warning)
-  vector.vcxproj -> C:\Users\Борис\Documents\Visual Studio 2012\Projects\vector\Debug\vector.exe

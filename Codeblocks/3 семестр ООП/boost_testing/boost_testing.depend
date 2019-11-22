@@ -1,5 +1,0 @@
-# depslib dependency file v1.0
-1382216138 source:/home/risent/Boris.Strelnikov/boost_testing/main.cpp
-	<boost/test/included/unit_test.hpp>
-	<list>
-

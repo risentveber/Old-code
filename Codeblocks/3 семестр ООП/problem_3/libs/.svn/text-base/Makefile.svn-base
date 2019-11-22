@@ -1,2 +1,0 @@
-main:
-	g++-4.7 -std=c++11 -c disjoint_sets.cpp -o disjoint_sets.a
