@@ -3,6 +3,8 @@
 #include <algorithm>
 #include <fstream>
 #include <iomanip>
+#include <math.h>
+#include <float.h>
 
 using namespace std;
 

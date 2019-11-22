@@ -13,6 +13,4 @@ int main(){
 		a.popBack();
 	}
 	cout << endl;
-	system("pause");
-	return 0;
 }

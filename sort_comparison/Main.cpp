@@ -5,7 +5,6 @@
 
 
 using namespace std;
-typedef int data;
 
 #include "Functions.h"
 #include "QuickSort.h"

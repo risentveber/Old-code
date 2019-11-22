@@ -1,5 +1,7 @@
 
 
+typedef int data;
+
 
 void systemsort(data* massiv, int count, bool (*compare)(data a, data b))
 {

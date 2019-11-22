@@ -8,8 +8,5 @@ int main(int argc, char** argv)
 	ifstream infile("input.txt");
 	infile >> G;
 	G.projects(infile);
-
-	system("pause");
-	return 0;
 }
 

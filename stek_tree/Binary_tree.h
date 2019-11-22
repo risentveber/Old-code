@@ -1,3 +1,8 @@
+#include <cstddef>
+#include <stdlib.h>
+#include <stdio.h>
+
+typedef int data;
 
 struct tree_element
 {
@@ -83,10 +88,8 @@ void insert(tree_element* root, data item)//Функция вставки эле
 void remove_item(tree_element* &root, data item)
 {
 	tree_element* temp = find(root, item);//Просматриваемый элемент
-	tree_element* parent;//Родитель текущего элемента
 	tree_element* right;//Правый сын текущего
 	tree_element* left;//Левый сын текущего
-	tree_element* helper;
 	tree_element** par;//Адрес указателя на текущий элемент
 
 	if (temp != NULL)//Если удаляемый элемент найден

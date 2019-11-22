@@ -1,8 +1,12 @@
-
+#include <stdlib.h>
+#include <stdio.h>
+#include <cmath>
 #include <time.h>
-#include <intrin.h>
+#include <string>
 
-void fillMassiv(data* massiv, int count, int det)
+typedef int data;
+
+void fillArray(data* massiv, int count, int det)
 {//Заполняет массив размера count случайными числами
 	srand(det);
 	for(int index = 0; index < count; index++)
@@ -13,7 +17,7 @@ void fillMassiv(data* massiv, int count, int det)
 	}
 }
 
-void printMassiv(data* massiv, int count)//Выводит на экран массив размера count
+void printArray(data* massiv, int count)//Выводит на экран массив размера count
 {
 	for(int i = 0; i < count; i++)
 	{
@@ -22,18 +26,17 @@ void printMassiv(data* massiv, int count)//Выводит на экран мас
 	printf("\n");
 }
 
-
-void analyze(char name[50], int border, void (*sortew)(data* massiv, int count, bool (*compare)(data a, data b)),bool (*compare)(data a, data b))
+void analyze(const char name[100], int border, void (*sortew)(data* massiv, int count, bool (*compare)(data a, data b)),bool (*compare)(data a, data b))
 {
 	data* massiv = (data*)malloc(10000000*sizeof(data));
-	unsigned __int64 max;
-	unsigned __int64 min;
-	unsigned __int64 sum;
+	unsigned long int max;
+	unsigned long int min;
+	unsigned long int sum;
 	int count;
-	unsigned __int64 temp;//Время работы
+	unsigned long int temp;//Время работы
 	int random = 0;
 	puts(name);
-	puts("Количество                  min              average                  max");
+	printf("Количество                  min              average                  max\n");
 	for(int m = 1; m <= border; m++)
 	{
 		count = pow(10, m);
@@ -43,7 +46,7 @@ void analyze(char name[50], int border, void (*sortew)(data* massiv, int count, 
 		for(int k = 0; k < 10; k++)// 10 раз испытываем на данном количестве count
 		{
 			random++;
-			fillMassiv(massiv, count, random);
+			fillArray(massiv, count, random);
 			temp = __rdtsc();
 			sortew(massiv, count, compare);
 			temp = __rdtsc() - temp;
@@ -58,9 +61,9 @@ void analyze(char name[50], int border, void (*sortew)(data* massiv, int count, 
 			}
 		}
 		printf("%10i ", count);
-		printf("%20I64d ", min);
-		printf("%20I64d ", sum/10);
-		printf("%20I64d \n", max);
+		printf("%20lu ", min);
+		printf("%20lu ", sum/10);
+		printf("%20lu \n", max);
 	}
 	free(massiv);
 	printf("\n");

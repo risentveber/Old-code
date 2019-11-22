@@ -27,7 +27,7 @@ bool operator == (const myVector<bool> &a, const myVector<bool> &b){
 		for(size_t i = 0; i < size / 8; ++i)
 			if (a._array[i] != b._array[i])
 				return false;
-		if (a._array[size/8*8] & (255 << (7 - size % 8)) != b._array[size/8*8] & (255 << (7 - size % 8)))
+		if ((a._array[size/8*8] & (255 << (7 - size % 8))) != (b._array[size/8*8] & (255 << (7 - size % 8))))
 			return false;
 		return true;
 	}
@@ -133,18 +133,3 @@ bool  myVector<bool>::operator [] (size_t index)const{
 		throw std::out_of_range("myVector");
 
 };
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

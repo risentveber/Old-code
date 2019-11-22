@@ -1,5 +1,8 @@
 #include "string.h"
 #include <stdexcept>
+#include <iostream>
+
+
 my_string::my_string(){
 	_array = new char[1];
 	_array[0] = '\0';

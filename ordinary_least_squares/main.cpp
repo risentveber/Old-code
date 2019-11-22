@@ -2,6 +2,7 @@
 #include <iostream>
 #include <string>
 #include <math.h>
+#include <cstdio>
 
 using namespace std;
 
@@ -10,11 +11,11 @@ int main()
     freopen ("output.txt", "w", stdout);
 	freopen ("input.txt", "r", stdin);
 
-
+	
 	string name;
 	getline(cin, name);
 	cout << name << endl;
-
+	
 	int n;
 	cin >> n;
 
@@ -43,8 +44,8 @@ int main()
 		y_square += tmp_y*tmp_y;
 		xy += tmp_x*tmp_y;
 	}
-
-
+	
+	
 	x /= n;
 	y /= n;
 	x_square /= n;
@@ -52,7 +53,7 @@ int main()
 	xy /= n;
 	long double k;
 	long double s_k;
-	char sign = 177;
+	string sign = "+-";
 	if (parameter == "график проходит через ноль"){
 		cout << "y = kx" << endl;
 		k = xy/x_square;

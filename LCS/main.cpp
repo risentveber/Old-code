@@ -1,11 +1,9 @@
 #include <stdio.h>
 #include <string.h>
 #include <iostream>
+
 #define N 1000
 #define max(a,b) ((a>b) ? a : b)
-
-
-
 
 int main()
 {
@@ -70,6 +68,4 @@ int main()
 		};
 	}
 	puts(massiv);
-	system("PAUSE");
-    return 0;
 }
