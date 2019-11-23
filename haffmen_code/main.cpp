@@ -1,10 +1,10 @@
 #include <iostream>
 #include <fstream>
 #include <map>
-#include "Node.h"
 #include <queue>
 #include <utility>
 #include <deque>
+#include "Node.h"
 
 using namespace std;
 Node* tree_maker(ifstream &input){
@@ -80,7 +80,7 @@ int main(){
 	ifstream input;
 	ofstream output;
 	input.open("input.txt",ios::binary);
-	output.open("code.txt");
+	output.open("code.txt.gen");
 	Node *tree = tree_maker(input);
 	map<unsigned char, deque<bool>> symbCode = code(tree);
 	int a;
@@ -114,9 +114,8 @@ int main(){
 	input.close();
 	output.close();
 
-	input.open("code.txt",ios::binary);
-	output.open("decode.txt");
-	bool flag = false;
+	input.open("code.txt.gen",ios::binary);
+	output.open("decode.txt.gen");
 	int cursor = 8;
 	Node *node = tree;
 	size_t count_output = 0;
@@ -155,10 +154,6 @@ int main(){
 
 	input.close();
 	output.close();
-	output.open("compression.txt",ios::binary);
-	output << (count_output+0.0)/count_input << endl;
-	output.close();
-	//getchar();
-	return 0;
+	cout << "compresion ratio: " << (count_output+0.0)/count_input << endl;
 }
 

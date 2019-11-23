@@ -83,7 +83,4 @@ int main()
 
 	read_file(graph);
 	proc_input(graph);
-
-	//system("pause");
-	exit(0);
 }

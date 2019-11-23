@@ -1,6 +1,8 @@
 #include "disjoint_set.h"
 #include <ostream>
 #include <list>
+#include <unordered_map>
+
 
 template<typename T>
 void disjoint_sets<T>::pin()
@@ -90,8 +92,7 @@ void disjoint_sets<T>::del_set_id(tree_node* a)
 template<typename T>
 disjoint_sets<T>::~disjoint_sets()
 {
-	unordered_map<T, tree_node*>::iterator it;
-	for(it = identif.begin(); it != identif.end(); ++it)
+	for(auto it = identif.begin(); it != identif.end(); ++it)
 		delete it->second;
 
 }

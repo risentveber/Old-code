@@ -90,6 +90,4 @@ int main()
         n++;
     }
     puts(stroke); //Вывод обратного
-    system("pause");
-    return 0;
 }

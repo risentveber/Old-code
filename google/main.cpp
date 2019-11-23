@@ -13,7 +13,4 @@ int main()
 	a.union_sets(8, 7);
 	for(int i = 0; i < 10; ++i)
 		cout << a.find_set(i) << endl;
-
-	system("pause");
-	return 0;
 }

@@ -7,7 +7,7 @@ struct pt {
 };
 
 bool cmp (pt a, pt b) {
-	return a.x < b.x || a.x == b.x && a.y < b.y;
+	return a.x < b.x || (a.x == b.x && a.y < b.y);
 }
 
 bool cw (pt a, pt b, pt c) {// по часовой стрелке
@@ -46,6 +46,5 @@ void convex_hull (vector<pt> & a){
 }
 
 int main(){
-
 	return 0;
 }

@@ -7,8 +7,8 @@ using namespace std;
 
 class tmpl_element
 {
-public:
-    string elem_str;
+    public:
+        string elem_str;
 };
 
 vector<tmpl_element> get_tmpl_elem(string &str)
@@ -88,6 +88,4 @@ int main()
 
     return 0;
 }
-
-
 

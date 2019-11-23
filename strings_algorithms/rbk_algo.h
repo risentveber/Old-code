@@ -1,8 +1,16 @@
-#include "RBK.hpp"
+#ifndef STRINGS_ALGO_H_INCLUDED
+#define STRINGS_ALGO_H_INCLUDED
 
+#include <iostream>
+#include <string>
+#include <cstring>
+#include <climits>
+
+#define UC unsigned wchar_t
+using namespace std;
 
 const unsigned q = 524287;//достаточно большое простое число
-const unsigned d = 1 << 16;
+// const unsigned d = 1 << 16;
 
 bool str_in(wstring &str, wstring &text, unsigned pos)
 {
@@ -35,11 +43,13 @@ void Rabin_Carp_Matcher(wstring &text, wstring &str)
     }
 
     for (unsigned s = 0; s <= n - m; ++s){
-        if (p == t)
-            if (str_in(str, text, s))
+        if (p == t) {
+            if (str_in(str, text, s)) {
                 cout << "вхождение образца " << s << endl;
-            else
+            } else {
                 cout << "ложное срабатывание " << s << endl;
+            }
+        }
         if (s != n - m){
             t = ( ((t - (UC)text[s] * h) << 16) + (UC)text[s + m]) % q;
             if (t < 0)
@@ -48,3 +58,6 @@ void Rabin_Carp_Matcher(wstring &text, wstring &str)
     }
 
 }
+
+
+#endif // STRINGS_ALGO_H_INCLUDED

@@ -104,20 +104,20 @@ void Graph::search_components()
 	vector<int> index(count, -1);
 	vector<int> low_index(count, count + 1);
 	vector<bool> used(count, false);
-	unsigned not = 1;
+	unsigned notc = 1;
 	unsigned n = 1;
 	unsigned time = 0;
 	vector<unsigned> component(count);
 	unsigned low_c = 1;
 
 
-	while (not < count){//пока не все вершины обошли
-		if (index[not] == -1){
-			index[not] = time;
-			low_index[not] = time++;
-			algo.push(not);
-			auto it = vertices[not].begin();
-			DFS.push(not);
+	while (notc < count){//пока не все вершины обошли
+		if (index[notc] == -1){
+			index[notc] = time;
+			low_index[notc] = time++;
+			algo.push(notc);
+			auto it = vertices[notc].begin();
+			DFS.push(notc);
 			DFS_it.push(it);
 			while(DFS.size() != 0){
 				while ((it = DFS_it.top()) != vertices[DFS.top()].end()){
@@ -156,7 +156,7 @@ void Graph::search_components()
 
 			}
 		} else
-			++not;
+			++notc;
 	}
 	vector<shared_ptr<string>> current;
 	vector<shared_ptr<string>> others;

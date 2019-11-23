@@ -1,10 +1,9 @@
-#include "strings_algo.h"
+#include "rbk_algo.h"
 #include <locale>
-
 
 int main()
 {
-     locale utf("ru_RU.UTF-8");
+    locale utf("ru_RU.UTF-8");
     locale::global(utf);
     wcin.imbue(utf);
     wcout.imbue(utf);
@@ -14,6 +13,4 @@ int main()
     wcin >> str;
     wcin >> text;
     Rabin_Carp_Matcher(text, str);
-
-    return 0;
 }

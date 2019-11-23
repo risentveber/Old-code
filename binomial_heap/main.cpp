@@ -55,11 +55,9 @@ BOOST_AUTO_TEST_CASE( test_2 )
 
 BOOST_AUTO_TEST_SUITE_END( )
 
-
-
-//int main()
-//{
+// int main()
+// {
 //    srand(time(NULL));
 //    cout << gen_str(100) << endl;
 //    return 0;
-//}
+// }
